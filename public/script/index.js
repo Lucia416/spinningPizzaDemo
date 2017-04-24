@@ -90,7 +90,7 @@ var clickHandler = () => {
           $('.title').html(userLoser);
           $('.pizza').show();
         }
-$('.spinner').on('touchstart', clickHandler);
+
 
   });
 
