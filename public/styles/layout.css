@@ -24,6 +24,25 @@
 
 }
 
+#congrats img{
+
+  width:350px;
+  height:100px;
+  left:650px;
+  position:absolute;
+  top:500px;
+}
+
+#tryAgain img{
+  width:350px;
+  height:100px;
+  left:650px;
+  position:absolute;
+  top:500px;
+
+
+}
+
 .pizza{
 
   position:absolute;
@@ -38,15 +57,22 @@
 }
 
 .slice{
+  background: url('./styles/images/congratStencil.png')
   position:absolute;
   transform-origin: 51.95% 49.2%;
 }
 
 #plate{
-  display:none;
-  width:500px;
-  height:500px;
+  width:400px;
+  height:400px;
+  right:-300px;
+  position:relative;
+  float:right;
+  margin-right:4%;
+  top:-70%;
 }
+
+
 
 
 .spinner {

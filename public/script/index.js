@@ -36,33 +36,34 @@ var prices = [
 $(function() {
 
 var $r = $('.pizza').fortune(prices);
+$('#congrats').hide();
+$('#tryAgain').hide();
 
 var clickHandler = function() {
 
   $r.spin().done(function(price) {
     if(price.id === 'sliceOne'){
-      $('.price').text('You have: ' + price.name);
-      $('#sliceOne').css('-webkit-transform','translateZ(-500px)');
+      $('#congrats').show(600);
+      $('#sliceOne').hide();
       $('#plate').show(600);
-    } else if (price.id == 'sliceTwo'){
-      $('.price').text('You have: ' + price.name);
-      $('#sliceTwo').css('-webkit-transform','translateZ(500px)');
-    }else if (price.id == 'sliceThree'){
-      $('.price').text('You have: ' + price.name);
+    } else if (price.id === 'sliceTwo'){
+      $('#tryAgain').show(600);
+    }else if (price.id === 'sliceThree'){
+      $('#congrats').show(600);
         $('#sliceThree').css('-webkit-transform','translateZ(500px)');
-            $('#plate').show(600);
-    }else if (price.id == 'sliceFour'){
-      $('.price').text('You have: ' + price.name);
+        $('#plate').show(600);
+    }else if (price.id === 'sliceFour'){
+      $('#tryAgain').show(600);
       $('#sliceFour').css('-webkit-transform','translateZ(500px)');
-    }else if (price.id == 'sliceFive'){
-      $('.price').text('You have: ' + price.name);
+    }else if (price.id === 'sliceFive'){
+      $('#congrats').show(600);
       $('#sliceFive').css('-webkit-transform','translateZ(500px)');
             $('#plate').show(600);
-    }else if (price.id == 'sliceSix'){
+    }else if (price.id === 'sliceSix'){
       $('.price').text('You have: ' + price.name);
       $('#sliceSix').css('-webkit-transform','translateZ(500px)');
-    }else if (price.id == 'sliceSeven'){
-      $('.price').text('You have: ' + price.name);
+    }else if (price.id === 'sliceSeven'){
+      $('#congrats').show(600);
       $('#sliceSeven').css('-webkit-transform','translateZ(500px)');
             $('#plate').show(600);
     }else if (price.id == 'sliceEight'){

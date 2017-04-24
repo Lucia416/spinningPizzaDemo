@@ -8,9 +8,9 @@
     var options = $.extend({}, {
       prices: args,
       duration: 1000,
-      separation: 3,
+      separation: 16,
       min_spins: 10,
-      max_spins: 15,
+      max_spins: 12,
       clockWise: true,
       onSpinBounce: function() {}
     }, args);
