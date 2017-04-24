@@ -1,58 +1,69 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Spin Pizza</title>
-    <link rel="stylesheet" href="./public/styles/layout.css">
-    <script src="./jquery-3.0.0.js"></script>
-    <script src="./public/script/index.js"></script>
-    <script src="./jquery.fortune.js"></script>
-</head>
+  <html >
+    <head>
+      <meta charset="UTF-8">
+      <title>Spin Pizza</title>
+        <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+        <link rel="stylesheet" href="./public/styles/layout.css">
+        <script src="./jquery-3.0.0.js"></script>
+        <script src="./jquery.fortune.js"></script>
 
-  <body class='main'>
-    <img id='letsPlay' src='./public/styles/images/titleStylepng.png'/>
-      <div class="container">
+    </head>
 
-        <div class='cutboard'>
-           <img id='cutboard' src = './public/styles/images/cutboard.png'/>
-            <img id='plate' src = './public/styles/images/plate.png'/>
-         </div>
-      
+    <body class='main'>
 
-            <button class="spinner">
-              <img id="pepp" src='./public/styles/images/peppstencil.png' width='100%' height='100%' text='Spin!'/>
-            </button>
+      <h1 class='title'>Spin to Win a Free Pizza Slice</h1>
+      <!-- <div id="congrats">
+       <h1>Congratulations!You won a free pizza slice</h1>
+      </div> -->
+      <!-- <img id='letsPlay' src='./public/styles/images/titleStylepng.png'/> -->
+        <div class="container">
 
-        <?xml version="1.0" encoding="utf-8"?>
-             <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-             <svg version="1.1" id="pizza"  class='pizza' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             	 width="2000px" height="1331px" viewBox="0 0 2000 1331" style="enable-background:new 0 0 2000 1331;" xml:space="preserve">
-               <image  width="2000" height="1331" class='slice' id="sliceOne" xlink:href="./public/styles/images/svg/3774CE7C.png"  transform="matrix(1 0 0 1 6 3)" >
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceTwo" xlink:href="./public/styles/images/svg/3774CE7D.png"  transform="matrix(1 0 0 1 13 -10)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceThree" xlink:href="./public/styles/images/svg/3774CE7B.png"  transform="matrix(1 0 0 1 6 -6)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331"class='slice' id="sliceFour" xlink:href="./public/styles/images/svg/3774CE84.png"  transform="matrix(1 0 0 1 16 -13)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331"class='slice' id="sliceFive" xlink:href="./public/styles/images/svg/3774CE87.png"  transform="matrix(1 0 0 1 9 -31)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331"class='slice' id="sliceSix" xlink:href="./public/styles/images/svg/3774CE85.png"  transform="matrix(1 0 0 1 16 -25)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceSeven" xlink:href="./public/styles/images/svg/3774CE8B.png"  transform="matrix(1 0 0 1 22 -7)">
-               </image>
-               <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceEight" xlink:href="./public/styles/images/svg/3774CE8C.png"  transform="matrix(1 0 0 1 16 -3)">
-               </image>
-             </svg>
-               <div id="tryAgain">
-                 <img src= './public/styles/images/sorryStencil.png' />
-               </div>
-               <div id="congrats">
-                 <img src= './public/styles/images/congratStencil.png' />
-               </div>
 
-      </div>
 
-    </body>
+          <div class='cutboard'>
+
+             <img id='cutboard' src = './public/styles/images/cutboard.png'/>
+              <img id='plate' src = './public/styles/images/plate.png'/>
+           </div>
+
+           <div  id='marker'>
+             <img src = './public/styles/images/marker.png'/>
+           </div>
+
+
+              <button class="spinner">
+                <img id="peppST" src='./public/styles/images/peppstencil.png' width='100%' height='100%'/>
+              </button>
+              <button class="respin">
+                <img id="pepp" src='./public/styles/images/pep.png' width='100%' height='100%'/>
+              </button>
+
+
+          <?xml version="1.0" encoding="utf-8"?>
+               <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+               <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+               <svg version="1.1" id="pizza"  class='pizza' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               	 width="930px" height="930px" viewBox="0 0 2000 1331" style="enable-background:new 0 0 2000 1331;">
+                 <image  width="2000" height="1331" class='slice' id="sliceOne" xlink:href="./public/styles/images/svg/3774CE7C.png"  transform="matrix(1 0 0 1 6 3)" >
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceTwo" xlink:href="./public/styles/images/svg/3774CE7D.png"  transform="matrix(1 0 0 1 13 -10)">
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceThree" xlink:href="./public/styles/images/svg/3774CE7B.png"  transform="matrix(1 0 0 1 6 -6)">
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331"class='slice' id="sliceFour" xlink:href="./public/styles/images/svg/3774CE84.png"  transform="matrix(1 0 0 1 16 -13)">
+                 </image>
+                 <image width="2000" height="1331"class='slice' id="sliceFive" xlink:href="./public/styles/images/svg/3774CE87.png" transform="matrix(1 0 0 1 9 -31)"  >
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331"class='slice' id="sliceSix" xlink:href="./public/styles/images/svg/3774CE85.png"  transform="matrix(1 0 0 1 16 -25)">
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceSeven" xlink:href="./public/styles/images/svg/3774CE8B.png"  transform="matrix(1 0 0 1 22 -7)">
+                 </image>
+                 <image style="overflow:visible;" width="2000" height="1331" class='slice' id="sliceEight" xlink:href="./public/styles/images/svg/3774CE8C.png"  transform="matrix(1 0 0 1 16 -3)">
+                 </image>
+               </svg>
+        </div>
+        <script src="./public/script/index.js"></script>
+
+      </body>
 </html>

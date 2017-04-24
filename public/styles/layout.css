@@ -1,9 +1,40 @@
 .main{
+
   background-image: url('./images/background.jpg');
   min-width: 100%;
   min-height: 100%;
+  font-family: 'Holtwood One SC', serif;
+
 }
+.title{
+  font-size: 60px;
+
+}
+
+h1{
+
+
+  margin-bottom: 0;
+  text-align: center;
+  color:gold;
+
+  text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 3px 0 black,
+                0 4px 0 black,
+                0 5px 0 black,
+                0 6px 1px rgba(0,0,0,.6),
+                0 0 5px rgba(0,0,0,.6),
+                0 1px 3px rgba(0,0,0,.6),
+                0 3px 5px rgba(0,0,0,.6),
+                0 5px 10px rgba(0,0,0,.6),
+                0 10px 10px rgba(0,0,0,.6),
+                0 20px 20px rgba(0,0,0,.6);
+}
+
+
  #cutboard{
+   overflow: visible !important;
    transform: rotate(220deg);
    width:100%;
    height:100%;
@@ -14,18 +45,23 @@
   right:25%;
 }
 
+#pepp{
+  display:none;
+}
+
 .cutboard{
 
-  margin-top: 2.5%;
+  margin-top: 100px;
   float:left;
-  position:relative;
+  position:absolute;
   width:1050px;
   height:690px;
 
 }
 
-#congrats img{
 
+#congrats img{
+  display: none;
   width:350px;
   height:100px;
   left:650px;
@@ -34,6 +70,7 @@
 }
 
 #tryAgain img{
+  display: none;
   width:350px;
   height:100px;
   left:650px;
@@ -43,23 +80,30 @@
 
 }
 
-.pizza{
+#pizza{
+  overflow: visible !important;
 
   position:absolute;
-  top:120px;
+  top:150px;
   left:90px;
-  width:930px;
-  height:930px;
   transform-origin: 51.95% 49.2%;
-  transition: ease infinite;
-
 
 }
+#marker{
+  overflow: visible !important;
+}
 
-.slice{
-  background: url('./styles/images/congratStencil.png')
+#marker img{
+
+  width: 80px;
+  height:80px;
   position:absolute;
-  transform-origin: 51.95% 49.2%;
+  left:865px;
+  top:550px;
+}
+.slice {
+  transition: .7s ease-in;
+
 }
 
 #plate{
@@ -70,10 +114,8 @@
   float:right;
   margin-right:4%;
   top:-70%;
+  display:none;
 }
-
-
-
 
 .spinner {
 
@@ -90,4 +132,7 @@
   padding:0.01em;
 
 }
+
+
+
 button:focus {outline:0;}
