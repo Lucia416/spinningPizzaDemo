@@ -1,10 +1,27 @@
-.main{
+body{
 
-  background-image: url('./images/background.jpg');
+
   min-width: 100%;
   min-height: 100%;
   font-family: 'Holtwood One SC', serif;
 
+
+}
+
+.parallax{
+  content: '';
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('./images/background.jpg')no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100vw;
 }
 .title{
   font-size: 60px;
@@ -51,9 +68,9 @@ h1{
 
 .cutboard{
 
-  margin-top: 100px;
+  margin-top: 7%;
   float:left;
-  position:absolute;
+  position:relative;
   width:1050px;
   height:690px;
 
@@ -132,7 +149,30 @@ h1{
   padding:0.01em;
 
 }
-
-
-
 button:focus {outline:0;}
+
+@keyframes spin {
+  0%,3% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  30%, 40% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  45%, 50% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+span{
+  animation: spin 10s ease-out;
+  display: inline-block;
+
+}

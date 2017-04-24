@@ -67,7 +67,7 @@ var clickHandler = () => {
         $('#sliceOne').show();
         $('#plate').hide(600);
 
-      }, 2000);
+      }, 2300);
     }else if (price.id === 'Four'){
       $('.title').html(userWinner);
       $('#sliceFour').hide();
@@ -76,7 +76,7 @@ var clickHandler = () => {
         $('#sliceFour').show();
         $('#plate').hide(600);
 
-      },2000);
+      },2300);
       }else if (price.id === 'Seven'){
           $('.title').html(userWinner);
           $('#sliceSeven').hide();
@@ -85,7 +85,7 @@ var clickHandler = () => {
             $('#sliceSeven').show();
             $('#plate').hide(600);
 
-          }, 2000);
+          }, 2300);
         }else{
           $('.title').html(userLoser);
           $('.pizza').show();
