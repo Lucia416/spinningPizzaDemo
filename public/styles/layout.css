@@ -1,6 +1,6 @@
 body{
 
-
+  background: url('./images/background.jpg')no-repeat center center;
   min-width: 100%;
   min-height: 100%;
   font-family: 'Holtwood One SC', serif;
@@ -8,22 +8,8 @@ body{
 
 }
 
-.parallax{
-  content: '';
-  z-index: -1;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: url('./images/background.jpg')no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 .title{
-  font-size: 60px;
+  font-size: 30px;
 
 }
 
@@ -55,27 +41,16 @@ h1{
    width:100%;
    height:100%;
  }
-#letsPlay{
-  position: relative;
-  left:15%;
-  right:25%;
-}
-
-#pepp{
-  display:none;
-}
 
 .cutboard{
 
   margin-top: 7%;
   float:left;
   position:relative;
-  width:1050px;
-  height:690px;
+  width:710px;
+  height:480px;
 
 }
-
-
 #congrats img{
   display: none;
   width:350px;
@@ -97,11 +72,9 @@ h1{
 }
 
 #pizza{
-  overflow: visible !important;
-
   position:absolute;
-  top:150px;
-  left:90px;
+  top:75px;
+  left:35px;
   transform-origin: 51.95% 49.2%;
 
 }
@@ -111,11 +84,11 @@ h1{
 
 #marker img{
 
-  width: 80px;
-  height:80px;
+  width: 50px;
+  height:50px;
   position:absolute;
-  left:865px;
-  top:550px;
+  left:600px;
+  top:370px;
 }
 .slice {
   transition: .7s ease-in;
@@ -123,12 +96,11 @@ h1{
 }
 
 #plate{
-  width:400px;
-  height:400px;
-  right:-300px;
+  width:250px;
+  height:250px;
+  right:-700px;
   position:relative;
-  float:right;
-  margin-right:4%;
+
   top:-70%;
   display:none;
 }
@@ -137,10 +109,10 @@ h1{
 
   border: none;
   position: absolute;
-  width: 120px;
-  height: 120px;
-  top: 520px;
-  left: 510px;
+  width: 100px;
+  height: 100px;
+  top: 340px;
+  left: 340px;
   background-color: transparent;
 
   border-radius: 50%;

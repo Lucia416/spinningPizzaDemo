@@ -101,7 +101,7 @@ var clickHandler = () => {
 
 
 $('.spinner').on('click', clickHandler);
-$('.spinner').on('touchstart', clickHandler);
+$('.spinner').on('tap', clickHandler);
 
 
 
